@@ -1,0 +1,30 @@
+window#waybar {
+	background-color: rgba(0,0,0,0);
+}
+
+#workspaces{
+	background-color: rgba(255,255,255,1);
+	opacity: <opacity>;
+}
+#window {
+	background-color: rgba(255,255,255,1);
+	opacity: <opacity>;
+}
+#custom-touch.enabled{
+	background-color: rgba(255,255,255,1);
+	opacity: <opacity>;
+}
+#custom-touch.disabled{
+	background-color: rgba(255,0,0,1);
+	opacity: <opacity>;
+}
+#clock {
+	background-color: rgba(255,255,255,1);
+	opacity: <opacity>;
+}
+#custom-volume.disabled {
+	background-color: rgba(255,255,255,1);
+}
+#custom-volume.enabled {
+	background-color: rgba(255,0,255,1);
+}

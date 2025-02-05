@@ -1,0 +1,1 @@
+sed "s|<opacity>|1|g" sty.tmpl > style.css

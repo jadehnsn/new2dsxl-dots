@@ -1,0 +1,49 @@
+{
+	"reload_style_on_change": true,
+	"layer": "top",
+	"position": "top",
+
+	"modules-left": [
+		"hyprland/workspaces",
+		"hyprland/window"
+	],
+//	"modules-center": [		
+//	],
+	"modules-right": [
+		"custom/touch",
+		"clock",
+		"battery",
+		"custom/volume"
+	],
+	"custom/touch": {
+		"return-type": "json",
+		"format": "touch-screen",
+		"exec":"$HOME/.config/waybar/touch.sh",
+		"on-click": "$HOME/.config/waybar/touch.sh",
+		"signal": 2
+	},
+	"custom/volume":{
+		"return-type": "json",
+		"exec": "cat /tmp/media.wbhwksp",
+		"on-click": "python $HOME/.config/waybar/waybarHandler.py t media",
+		"format": "a: {}",	
+		"signal": 1
+	},
+	"hyprland/workspaces": {
+    		"format": "{icon}",
+    		"format-icons": {
+			"magic": "!",
+      			"urgent": "",
+      			//"active": "", // focused workspace on current monitor 
+      			"visible": "", // focused workspace on other monitors
+      			"default": "",
+      			"empty": "" // persistent (created by this plugin)
+			//"magic": "!"
+   	 	},
+	"show-special": false,
+    	"all-outputs": false // recommended
+  },
+	"hyprland/window": {
+		"format": "{title}"
+	}
+}
